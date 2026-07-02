@@ -179,4 +179,63 @@ border-radius:12px;
 footer{
 padding:30px;
 color:#64748b;
+} /* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px){
+
+header{
+    width:95%;
+    padding:12px 15px;
+    flex-direction:column;
+    gap:15px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+nav a{
+    font-size:14px;
+    padding:6px 10px;
+}
+
+.hero{
+    padding:120px 20px 60px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.about-buttons{
+    gap:8px;
+}
+
+.tab{
+    width:100%;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.skill{
+    width:100%;
+}
+
 }
