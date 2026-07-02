@@ -1,0 +1,182 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Plus Jakarta Sans', sans-serif;
+background:#050816;
+color:white;
+overflow-x:hidden;
+line-height:1.6;
+}
+
+/* 🌌 PARTICLES */
+canvas{
+position:fixed;
+inset:0;
+z-index:-10;
+}
+
+/* ✨ CURSOR LIGHT */
+.cursor-light{
+position:fixed;
+width:350px;
+height:350px;
+background:radial-gradient(circle,#38bdf830,transparent 70%);
+transform:translate(-50%,-50%);
+pointer-events:none;
+z-index:-5;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:15px;
+left:50%;
+transform:translateX(-50%);
+width:92%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 20px;
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,0.05);
+border-radius:16px;
+}
+
+.logo{
+font-size:22px;
+color:#38bdf8;
+font-weight:700;
+}
+
+/* NAV */
+nav{
+display:flex;
+gap:15px;
+}
+
+nav a{
+color:#cbd5e1;
+text-decoration:none;
+font-size:14px;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:44px;
+}
+
+/* SECTIONS */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+font-size:28px;
+margin-bottom:20px;
+}
+
+/* ABOUT */
+.about-wrapper{
+max-width:800px;
+margin:0 auto;
+}
+
+.about-buttons{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.tab{
+padding:10px 14px;
+border:none;
+border-radius:10px;
+background:rgba(255,255,255,0.05);
+color:white;
+cursor:pointer;
+}
+
+.tab.active{
+background:#38bdf8;
+color:#050816;
+}
+
+.tab-content{
+display:none;
+background:rgba(255,255,255,0.03);
+padding:20px;
+border-radius:12px;
+text-align:left;
+}
+
+.tab-content.active{
+display:block;
+}
+
+/* SKILLS */
+.skill{
+max-width:600px;
+margin:15px auto;
+text-align:left;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+}
+
+.bar{
+height:8px;
+background:#1e293b;
+border-radius:50px;
+overflow:hidden;
+}
+
+.bar span{
+display:block;
+height:100%;
+width:0;
+background:linear-gradient(90deg,#38bdf8,#7c3aed);
+transition:2s;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+max-width:800px;
+margin:0 auto;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:15px;
+border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+padding:30px;
+color:#64748b;
+}
